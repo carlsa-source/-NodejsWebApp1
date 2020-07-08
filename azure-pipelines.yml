@@ -41,7 +41,7 @@ stages:
         workingDir: 'NodejsWebApp1'
       displayName: 'npm install'
 
-    - script: |
+    - script: 
         npm run build --if-present
         npm run test --if-present
       displayName: 'npm build and test'
