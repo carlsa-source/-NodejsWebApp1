@@ -38,6 +38,8 @@ stages:
     - task: Npm@1
       inputs:
         command: 'install'
+        workingDir: 'NodejsWebApp1'
+      displayName: 'npm install'
 
     - script: |
         npm run build --if-present
